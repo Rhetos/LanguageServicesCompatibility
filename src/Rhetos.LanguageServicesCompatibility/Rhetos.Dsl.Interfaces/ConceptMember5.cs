@@ -17,32 +17,21 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-using Rhetos.Dsl;
-using Rhetos.Utilities;
+using System;
 using System.Collections.Generic;
+using System.Globalization;
+using System.Linq;
+using System.Linq.Expressions;
+using System.Reflection;
 
-namespace Rhetos.LanguageServicesCompatibility
+namespace Rhetos.Dsl
 {
-    public class DslSyntaxProvider
+    /// <summary>
+    /// Different version of ConceptMember, compatible with Rhetos 5.
+    /// Note that this library also uses the original ConceptMember from Rhetos 4.
+    /// </summary>
+    public class ConceptMember5 : ConceptMemberBase
     {
-        private readonly BuildOptions buildOptions;
-
-        public DslSyntaxProvider(BuildOptions buildOptions)
-        {
-            this.buildOptions = buildOptions;
-        }
-
-        public DslSyntax CreateDslSyntax()
-        {
-            
-            return new DslSyntax
-            {
-                ConceptTypes = new List<ConceptType> { },
-                Version = DslSyntax.CurrentVersion,
-                RhetosVersion = SystemUtility.GetRhetosVersion(),
-                ExcessDotInKey = buildOptions.DslSyntaxExcessDotInKey,
-                DatabaseLanguage = SqlUtility.DatabaseLanguage,
-            };
-        }
+        public Type ValueType { get; set; }
     }
 }

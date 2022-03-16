@@ -43,6 +43,7 @@ namespace Rhetos.Dsl
             PreserveReferencesHandling = PreserveReferencesHandling.Objects,
             ReferenceLoopHandling = ReferenceLoopHandling.Serialize,
             Formatting = Formatting.Indented,
+            Converters = new[] { new Newtonsoft.Json.Converters.VersionConverter() } // Required for Rhetos 4 that uses Newtonsoft.Json 12 instead of 13.
         };
 
         private string DslSyntaxFilePath => Path.Combine(_rhetosBuildEnvironment.CacheFolder, DslSyntaxFileName);

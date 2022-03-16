@@ -29,8 +29,9 @@ namespace Rhetos.LanguageServicesCompatibility
     {
         protected override void Load(ContainerBuilder builder)
         {
-            builder.RegisterType<DslSyntaxProvider>();
-            builder.Register(context => context.Resolve<DslSyntaxProvider>().CreateDslSyntax()).As<DslSyntax>().SingleInstance();
+            builder.RegisterType<DslSyntaxFromPlugins>();
+            builder.Register(context => context.Resolve<DslSyntaxFromPlugins>().CreateDslSyntax()).As<DslSyntax>().SingleInstance();
+
             builder.RegisterType<DslSyntaxFile>();
             builder.RegisterType<DslSyntaxFileGenerator>().As<IGenerator>();
 
