@@ -12,6 +12,7 @@
     <releaseNotes>
 </releaseNotes>
     <dependencies>
+	    <dependency id="Rhetos" version="4.0.0" />
     </dependencies>
   </metadata>
   <files>
