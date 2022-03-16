@@ -104,6 +104,12 @@
       <Version>4.3.0</Version>
     </PackageReference>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Rhetos.LanguageServicesCompatibility\Rhetos.LanguageServicesCompatibility.csproj">
+      <Project>{16a5863a-6117-416c-9816-22fe32be7ff2}</Project>
+      <Name>Rhetos.LanguageServicesCompatibility</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
