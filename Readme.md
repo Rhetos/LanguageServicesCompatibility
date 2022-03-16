@@ -3,7 +3,7 @@
 Rhetos.LanguageServicesCompatibility is a DSL package (a plugin module) for [Rhetos development platform](https://github.com/Rhetos/Rhetos).
 
 It provides support for Rhetos DSL IntelliSense in Visual Studio ([Rhetos Language Services](https://github.com/Rhetos/LanguageServices))
-for applications with Rhetos v4.
+for older applications with Rhetos v4.
 
 Rhetos v5 apps, and newer, support Rhetos Language Services by default; they do not need this plugin.
 
