@@ -1,0 +1,23 @@
+﻿<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Rhetos.LanguageServicesCompatibility</id>
+    <version>4.0.0-dev</version>
+    <authors>Omega software</authors>
+    <owners>Omega software</owners>
+    <projectUrl>https://github.com/rhetos/rhetos</projectUrl>
+    <description>This package is a plugin for Rhetos development platform.</description>
+    <copyright>Copyright Omega software 2019</copyright>
+    <tags>Rhetos plugin</tags>
+    <releaseNotes>
+</releaseNotes>
+    <dependencies>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="..\Readme.md" target="" />
+    <file src="Rhetos.LanguageServicesCompatibility\bin\Debug\net472\Rhetos.LanguageServicesCompatibility.dll" target="lib\net472" />
+    <file src="Rhetos.LanguageServicesCompatibility\bin\Debug\net472\Rhetos.LanguageServicesCompatibility.pdb" target="lib\net472" />
+    <file src="Rhetos.LanguageServicesCompatibility\bin\Debug\net472\Rhetos.LanguageServicesCompatibility.xml" target="lib\net472" />
+  </files>
+</package>

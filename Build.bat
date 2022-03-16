@@ -11,8 +11,8 @@ REM Updating the build version.
 PowerShell -ExecutionPolicy ByPass .\tools\Build\ChangeVersion.ps1 %Version% %Prerelease% || GOTO Error0
 
 WHERE /Q NuGet.exe || ECHO ERROR: Please download the NuGet.exe command line tool. && GOTO Error0
-NuGet restore Rhetos.LanguageServicesCompatibility.sln -NonInteractive || GOTO Error0
-MSBuild Rhetos.LanguageServicesCompatibility.sln /target:rebuild /p:Configuration=Debug /p:RhetosDeploy=false /verbosity:minimal /fileLogger || GOTO Error0
+NuGet restore LanguageServicesCompatibility.sln -NonInteractive || GOTO Error0
+MSBuild LanguageServicesCompatibility.sln /target:rebuild /p:Configuration=Debug /p:RhetosDeploy=false /verbosity:minimal /fileLogger || GOTO Error0
 
 IF NOT EXIST Install MD Install
 DEL /F /S /Q Install\* || GOTO Error0

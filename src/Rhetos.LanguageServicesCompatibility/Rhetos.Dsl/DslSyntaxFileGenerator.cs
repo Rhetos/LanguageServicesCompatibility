@@ -17,12 +17,28 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-namespace Rhetos.Utilities
+using Rhetos.Extensibility;
+using System.Collections.Generic;
+
+namespace Rhetos.Dsl
 {
-    /// <summary>
-    /// Before Rhetos v4.0, dot character was expected before string key parameter of current statement.
-    /// Since Rhetos v4.0, dot should only be used for separating key parameters of referenced concept,
-    /// but legacy syntax is allowed by setting this option to <see cref="Ignore"/> or <see cref="Warning"/>.
-    /// </summary>
-    public enum ExcessDotInKey { Ignore = 0, Warning = 1, Error = 2 }; // Numeric values are important for backward compatibility of serialized options in DslSyntax class.
+    public class DslSyntaxFileGenerator : IGenerator
+    {
+        private readonly DslSyntax _dslSyntax;
+        private readonly DslSyntaxFile _dslSyntaxFile;
+        public static readonly string DslSyntaxFileName = "DslSyntax.json";
+
+        public DslSyntaxFileGenerator(DslSyntax dslSyntax, DslSyntaxFile dslSyntaxFile)
+        {
+            _dslSyntax = dslSyntax;
+            _dslSyntaxFile = dslSyntaxFile;
+        }
+
+        public void Generate()
+        {
+            _dslSyntaxFile.Save(_dslSyntax);
+        }
+
+        public IEnumerable<string> Dependencies => null;
+    }
 }
