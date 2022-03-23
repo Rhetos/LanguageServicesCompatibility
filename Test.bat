@@ -1,10 +1,10 @@
 SETLOCAL
 
 @REM Assuming Build.bat has completed successfully.
-test\TestApp\bin\Debug\net5.0\rhetos.exe dbupdate test\TestApp\bin\Debug\net5.0\TestApp.dll
+test\TestApp\bin\Rhetos.exe dbupdate || GOTO Error0
 
-@REM Using "no-build" option as optimization, because Test.bat should always be executed after Build.bat.
-dotnet test Impersonation.sln --no-build || GOTO Error0
+CALL Tools\Build\FindVisualStudio.bat || GOTO Error0
+vstest.console.exe test\Rhetos.LanguageServicesCompatibility.Test\bin\Debug\net5.0\Rhetos.LanguageServicesCompatibility.Test.dll || GOTO Error0
 
 @REM ================================================
 

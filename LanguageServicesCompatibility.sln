@@ -19,6 +19,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApp", "test\TestApp\TestApp.csproj", "{E9AFBC79-0A12-4931-89C5-BEB9C01CD327}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rhetos.LanguageServicesCompatibility.Test", "test\Rhetos.LanguageServicesCompatibility.Test\Rhetos.LanguageServicesCompatibility.Test.csproj", "{00857CAD-4F6D-4233-94C4-9FA9DAA24156}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{E9AFBC79-0A12-4931-89C5-BEB9C01CD327}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E9AFBC79-0A12-4931-89C5-BEB9C01CD327}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E9AFBC79-0A12-4931-89C5-BEB9C01CD327}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00857CAD-4F6D-4233-94C4-9FA9DAA24156}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00857CAD-4F6D-4233-94C4-9FA9DAA24156}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00857CAD-4F6D-4233-94C4-9FA9DAA24156}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00857CAD-4F6D-4233-94C4-9FA9DAA24156}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
