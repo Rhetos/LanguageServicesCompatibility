@@ -7,6 +7,10 @@
     },
     "LegacyPaths": {
       "ResourcesFolder": "Resources"
+    },
+    "AppSecurity":
+    {
+      "AllClaimsForAnonymous": true
     }
   }
 }
