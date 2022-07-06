@@ -4,16 +4,10 @@ WHERE /Q MSBuild.exe && EXIT /B 0
 @REM https://developercommunity.visualstudio.com/content/problem/26780/vsdevcmdbat-changes-the-current-working-directory.html
 SET "VSCMD_START_DIR=%CD%"
 
-@REM VS2017 uses vswhere.exe for locating the installation.
-FOR /f "usebackq delims=" %%i in (`"%ProgramFiles(x86)%\Microsoft Visual Studio\Installer\vswhere.exe" -prerelease -latest -property installationPath`) do (
+@REM Using specifically VS2019 (see "-version [16.0,17.0)") to test the build, because Rhetos msbuild integration seems to fail on ResolveRhetosProjectAssets
+@REM for VS2022 (Could not load file or assembly 'Newtonsoft.Json, Version=9.0.0.0,...)
+FOR /f "usebackq delims=" %%i in (`"%ProgramFiles(x86)%\Microsoft Visual Studio\Installer\vswhere.exe" -prerelease -latest -property installationPath -version [16.0^,17.0^)`) do (
   IF EXIST "%%i\Common7\Tools\VsDevCmd.bat" (CALL "%%i\Common7\Tools\VsDevCmd.bat" && GOTO OkRestoreEcho || GOTO Error)
-)
-
-@REM VS2015 uses %VS140COMNTOOLS% for locating the installation.
-IF "%VS140COMNTOOLS%" NEQ "" (
-  IF EXIST "%VS140COMNTOOLS%VsDevCmd.bat" (
-    CALL "%VS140COMNTOOLS%VsDevCmd.bat" x86 && GOTO OkRestoreEcho || GOTO Error
-  )
 )
 
 :Error
