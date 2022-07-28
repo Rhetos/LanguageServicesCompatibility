@@ -1,0 +1,15 @@
+ECHO Copying source files from Rhetos framework project: %1
+
+XCOPY /Y %1\Source\Rhetos.Dsl\DslDocumentationFileGenerator.cs "%~dp0..\..\src\Rhetos.LanguageServicesCompatibility\Rhetos.Dsl\DslDocumentationFileGenerator.cs"
+XCOPY /Y %1\Source\Rhetos.Dsl\DslSyntaxFileGenerator.cs "%~dp0..\..\src\Rhetos.LanguageServicesCompatibility\Rhetos.Dsl\DslSyntaxFileGenerator.cs"
+XCOPY /Y %1\Source\Rhetos.Dsl\DslSyntaxFromPlugins.cs "%~dp0..\..\src\Rhetos.LanguageServicesCompatibility\Rhetos.Dsl\DslSyntaxFromPlugins.cs"
+XCOPY /Y %1\Source\Rhetos.Dsl.Interfaces\ConceptMemberBase.cs "%~dp0..\..\src\Rhetos.LanguageServicesCompatibility\Rhetos.Dsl.Interfaces\ConceptMemberBase.cs"
+XCOPY /Y %1\Source\Rhetos.Dsl.Interfaces\ConceptMemberHelper.cs "%~dp0..\..\src\Rhetos.LanguageServicesCompatibility\Rhetos.Dsl.Interfaces\ConceptMemberHelper.cs"
+XCOPY /Y %1\Source\Rhetos.Dsl.Interfaces\ConceptMemberSyntax.cs "%~dp0..\..\src\Rhetos.LanguageServicesCompatibility\Rhetos.Dsl.Interfaces\ConceptMemberSyntax.cs"
+XCOPY /Y %1\Source\Rhetos.Dsl.Interfaces\ConceptSyntaxNode.cs "%~dp0..\..\src\Rhetos.LanguageServicesCompatibility\Rhetos.Dsl.Interfaces\ConceptSyntaxNode.cs"
+XCOPY /Y %1\Source\Rhetos.Dsl.Interfaces\ConceptType.cs "%~dp0..\..\src\Rhetos.LanguageServicesCompatibility\Rhetos.Dsl.Interfaces\ConceptType.cs"
+XCOPY /Y %1\Source\Rhetos.Dsl.Parser\ConceptDocumentation.cs "%~dp0..\..\src\Rhetos.LanguageServicesCompatibility\Rhetos.Dsl.Parser\ConceptDocumentation.cs"
+XCOPY /Y %1\Source\Rhetos.Dsl.Parser\DslDocumentation.cs "%~dp0..\..\src\Rhetos.LanguageServicesCompatibility\Rhetos.Dsl.Parser\DslDocumentation.cs"
+XCOPY /Y %1\Source\Rhetos.Dsl.Parser\DslDocumentationFile.cs "%~dp0..\..\src\Rhetos.LanguageServicesCompatibility\Rhetos.Dsl.Parser\DslDocumentationFile.cs"
+XCOPY /Y %1\Source\Rhetos.Dsl.Parser\DslSyntax.cs "%~dp0..\..\src\Rhetos.LanguageServicesCompatibility\Rhetos.Dsl.Parser\DslSyntax.cs"
+XCOPY /Y %1\Source\Rhetos.Dsl.Parser\DslSyntaxFile.cs "%~dp0..\..\src\Rhetos.LanguageServicesCompatibility\Rhetos.Dsl.Parser\DslSyntaxFile.cs"
