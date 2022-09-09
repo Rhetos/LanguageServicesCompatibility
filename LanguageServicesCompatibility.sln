@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.32002.261
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32602.215
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rhetos.LanguageServicesCompatibility", "src\Rhetos.LanguageServicesCompatibility\Rhetos.LanguageServicesCompatibility.csproj", "{16A5863A-6117-416C-9816-22FE32BE7FF2}"
 EndProject
@@ -15,11 +15,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		Readme.md = Readme.md
 		src\Rhetos.LanguageServicesCompatibility.nuspec = src\Rhetos.LanguageServicesCompatibility.nuspec
 		Test.bat = Test.bat
+		tools\Build\UpdateSourceFiles.bat = tools\Build\UpdateSourceFiles.bat
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApp", "test\TestApp\TestApp.csproj", "{E9AFBC79-0A12-4931-89C5-BEB9C01CD327}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rhetos.LanguageServicesCompatibility.Test", "test\Rhetos.LanguageServicesCompatibility.Test\Rhetos.LanguageServicesCompatibility.Test.csproj", "{00857CAD-4F6D-4233-94C4-9FA9DAA24156}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rhetos.LanguageServicesCompatibility.Test", "test\Rhetos.LanguageServicesCompatibility.Test\Rhetos.LanguageServicesCompatibility.Test.csproj", "{00857CAD-4F6D-4233-94C4-9FA9DAA24156}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
