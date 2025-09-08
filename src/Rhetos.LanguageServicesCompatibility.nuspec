@@ -7,6 +7,7 @@
     <owners>Omega software</owners>
     <projectUrl>https://github.com/rhetos/rhetos</projectUrl>
     <description>This package is a plugin for Rhetos development platform.</description>
+    <readme>docs\Readme.md</readme>
     <copyright>Copyright Omega software 2019</copyright>
     <tags>Rhetos plugin</tags>
     <releaseNotes>
@@ -16,7 +17,7 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="..\Readme.md" target="" />
+    <file src="..\Readme.md" target="docs" />
     <file src="Rhetos.LanguageServicesCompatibility\bin\Debug\net472\Rhetos.LanguageServicesCompatibility.dll" target="lib\net472" />
     <file src="Rhetos.LanguageServicesCompatibility\bin\Debug\net472\Rhetos.LanguageServicesCompatibility.pdb" target="lib\net472" />
     <file src="Rhetos.LanguageServicesCompatibility\bin\Debug\net472\Rhetos.LanguageServicesCompatibility.xml" target="lib\net472" />
